@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hi! My name is Jeremy!</title>
+    <!--<style>
+      /*The body here is the selector, the background is the style type and the red is the value. The style type and the value together make the "rule"*/
+      body {
+        /*background: red;*/
+        background: rgba(255, 0, 255, 0.7);
+        /*the color rule is the color of the text. Links will not change to this color because their default color is blue*/
+        color: aquamarine;
+      }
+      /*this is to style all links (anchors)*/
+      a {
+        color: chartreuse;
+      }
+      /*The same rules are available for all selectors. ie you can do background on anchors, body, pseudo selectors etc*/
+      
+      /*pseudo class example. Styles when you hover over an anchor element. The selector a:hover means style when you hover over an anchor. We call it pseudo because it's not a real element. There is nothing called hover in HTML. It is describing a temporary state*/
+      a:hover {
+        background: orange;
+      }
+    </style>-->
+    <style>
+      body {
+        background: rgba(0, 100, 255, 0.2)
+      }
+      
+      /*box model example*/
+      p {
+        /*size of border, type of border, color of border. Now every paragraph will have a solid 2px red border around it*/
+        border: 2px solid red;
+        /*add an em of padding around them. This is inside the box. The border will be pushed 1em out. The border is no longer right next to the text but now there is some space between the border and the space in it*/
+        padding: 1em;
+        /*if you wanna change all of the margins, left, right, top, bottom, then you can just use "margin". This will add white space outside of the border so that the paragraph is not right next to its adjacent elements.*/
+        margin-top: 5em;
+        margin-bottom: 5em;
+      }
+      
+      h1:hover {
+        color: darkblue;
+      }
+      
+      a:hover {
+        color: azure;
+        /*absolute measurement. Always 40 pixels*/
+        font-size: 40px:
+      }
+      
+      /*not working*/
+      a:visited {
+        text-decoration: none;
+      }
+      
+      /*also not working...*/
+      a:first-letter {
+        /*relative measurement. Most css uses the relative unit. It depends on the screen you are on. The meaurement is relative to the screen or default font you are currently are.*/
+        font-size: 200%;
+      }
+      
+      header {
+        width: 120%;
+        text-align: center;
+      }
+      
+      aside {
+        width: 50%;
+        text-align: center;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Box Model!</a>
+        <a href="cats.html">Cats!</a>
+        <a href="records.html">Records!</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Hello! Let's talk about the box model!</h1>
+      <p>
+        In a document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine.
+      </p>
+      <img src="images/box-model.png" alt="the css box model">
+      <p>
+        In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge.
+      </p>
+      <aside>
+        <h2>Further Reading</h2>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">MDN documentation</a>
+          </li>
+          <li>
+            <a href="http://www.w3schools.com/css/css_boxmodel.asp">W3 Schools documentation</a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <a href="https://github.com/jnf">_jnf</a> made this!
+      <a href="https://www.discogs.com/user/jnf/collection?layout=big">see more records</a>
+    </footer>
+  </body>
+</html>
